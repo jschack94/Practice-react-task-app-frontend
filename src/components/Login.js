@@ -114,7 +114,7 @@ class Login extends React.Component {
                                 color="#ffffff"
                                 value="SignUp"
                             >
-                                Sign Upfdf
+                                Sign Up
                             </Button>
                         </Link>
                     </Text>
