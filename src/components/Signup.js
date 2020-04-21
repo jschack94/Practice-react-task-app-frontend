@@ -44,54 +44,6 @@ class SignUp extends React.Component {
         })
     }
     
-    render () {
-        return (
-            <div className="signup">
-                <FormControl 
-                    ml="2%"
-                    mt="2%"
-                >
-                    <form onSubmit={this.handleOnSubmit}>
-                        <Box width={['45%', 0.35, 0.25, 0.15]}>
-                            <FormLabel htmlFor="username">username </FormLabel>
-                            <Input 
-                                type="text" 
-                                name="username" 
-                                value={this.state.username} 
-                                onChange={this.handleOnChange} 
-                                focusBorderColor="lime"
-                                size="sm"
-                                isRequired
-                            />
-                        </Box>
-                        <br />
-                        <Box width={['45%', 0.35, 0.25, 0.15]}>
-                            <FormLabel htmlFor="password">password </FormLabel>
-                            <Input 
-                                type="text" 
-                                name="password" 
-                                value={this.state.password} 
-                                onChange={this.handleOnChange} 
-                                focusBorderColor="lime"
-                                size="sm"
-                                isRequired
-                            />
-                        </Box>
-                        <br />
-                        <Button 
-                            variant="solid" 
-                            backgroundColor="green.400" 
-                            color="#ffffff"
-                            type="submit"
-                            value="SignUp"
-                        >
-                            Sign Up
-                        </Button>
-                    </form>
-                </FormControl>
-            </div>
-        )
-    }
-}
+    
 
 export default SignUp
