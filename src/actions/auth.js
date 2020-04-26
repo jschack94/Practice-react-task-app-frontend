@@ -5,7 +5,7 @@
     }
 }
 
-export const logoutUser = () => {
+xport const logoutUser = () => {
     return {
         type: 'LOGOUT_USER'
     }
