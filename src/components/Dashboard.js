@@ -12,7 +12,7 @@ class Dashboard extends React.Component {
     }
 
     render(){
-        if(!this.props.auth) {
+        if(!this.props.user) {
             this.props.history.push('/login')
             return null
           } 
@@ -27,7 +27,7 @@ class Dashboard extends React.Component {
                 ml="3"
             >
                 <Box >
-                    <h2 style={h2styles}>{this.props.auth.username}'s Notes</h2>
+                   
                 </Box>
                 <Box>
                     <Link to="/notes/new">
@@ -51,7 +51,7 @@ class Dashboard extends React.Component {
 
 const mapStateToProps = state => {
     return {
-        auth: state.auth
+        user: state.auth
     }
 }
 
